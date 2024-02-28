@@ -31,7 +31,7 @@
 {
     color: #FFF;
     padding: 10px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 2.0vw;
     /* float: right; */
     /* margin-right: 130px; */
@@ -43,7 +43,8 @@
     /* border: 1px solid #000; */
     float: right;
     /* margin-top: 25px; */
-    margin-right: 20px;
+    /* margin-right: 10px; */
+    margin-left: 50px;
     padding: 15px;
 }
 .menu a
@@ -53,7 +54,8 @@
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.3vw;
-    /* margin-top: 10px; */
+    margin-top: 10px;
+    margin-left: 20px;
 }
 .menu a:hover{
     background-color: lavender;
@@ -63,22 +65,22 @@
 .login-box
 {
     width: 30%;
-    min-height: 250px;
-    border: 1px solid #000;
+    min-height: 300px;
+    border: 2px solid white;
     position: absolute;
     top: 100px;
-    right: 400px;
+    right: 50px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    border-top-color: black;
-    border-bottom-color: black;
+    border-top-color: white;
+    border-bottom-color: white;
     
 }
 .header1
 {
-    color: black;
+    color: white;
     padding: 20px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 0.8vw;
@@ -105,21 +107,27 @@ input[type=text]
             margin: 10px 5px;
             padding: 10px 10px;
             outline: none;
-            /* border: none; */
-            /* background:none; */
-            /* background-image: url(imgs/user.png);
-             */
-            background-image: url(/images/user.png);
-            color: black;
-            border-bottom: 2px solid black;
+            border: none;
+            background:none;
+            background-image: url(./images/user.png);
+            background-repeat: no-repeat;
+            /* color: white; */
+            color: white;
+            /* border-bottom: 2px solid rgb(252, 252, 252); */
             text-align: center;
             /* border-radius: 10px; */
             margin-left: 10px;
+            /* border-radius: 10px; */
+            /* border: 3px solid black; */
         }
         input[type=text]::placeholder
         {
             text-align: center;
             color: white;
+        }
+        input[type=text]:focus
+        {
+            background-color: crimson;
         }
         input[type=password]
         {
@@ -133,11 +141,17 @@ input[type=text]
             background:none;
             color: white;
             border-bottom: 2px solid white;
+            background-image: url(./images/pass1.png);
+            background-repeat: no-repeat;
         }
         input[type=password]::placeholder
         {
             text-align: center;
             color: white;
+        }
+        input[type=password]:focus 
+        {
+            background-color: crimson;
         }
         input[type=submit]
         {
@@ -149,12 +163,14 @@ input[type=text]
             font-weight: bold;
             font-size: 20px;
             border: none;
-            background-color: #203A43;;
+            background-color: #4186a3;
             color: white;
-
+            background-image: url(./images/login32.png);
+            background-repeat: no-repeat;
+            border-radius: 10px;
         }
         input[type=submit]:hover{
 
-            background-color: #0F2027;
+            background-color: #81cdee;
             color: white;
         }
